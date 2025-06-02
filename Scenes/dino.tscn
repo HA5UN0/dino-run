@@ -1,6 +1,7 @@
-[gd_scene load_steps=30 format=3 uid="uid://cghasq7llts8e"]
+[gd_scene load_steps=31 format=3 uid="uid://cghasq7llts8e"]
 
 [ext_resource type="Texture2D" uid="uid://c525jycvvecyd" path="res://Assets/img/mort.png" id="1_hlxev"]
+[ext_resource type="Script" path="res://Scripts/dino.gd" id="1_wsw0l"]
 [ext_resource type="AudioStream" uid="uid://dscpg6m666dta" path="res://Assets/sound/jump.wav" id="2_epgr6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s5ofp"]
@@ -208,18 +209,20 @@ size = Vector2(12, 15)
 [node name="Dino" type="CharacterBody2D"]
 texture_filter = 1
 scale = Vector2(8, 8)
+script = ExtResource("1_wsw0l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_beh2q")
 animation = &"Duck"
 autoplay = "Idle"
-frame_progress = 0.289622
+frame_progress = 0.161727
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0.5)
 shape = SubResource("RectangleShape2D_0mxp7")
 
 [node name="DuckCol" type="CollisionShape2D" parent="."]
+z_index = 1
 position = Vector2(0, 1.5)
 shape = SubResource("RectangleShape2D_6qgvr")
 
