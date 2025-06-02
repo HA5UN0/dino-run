@@ -213,7 +213,7 @@ scale = Vector2(8, 8)
 sprite_frames = SubResource("SpriteFrames_beh2q")
 animation = &"Duck"
 autoplay = "Idle"
-frame_progress = 0.948423
+frame_progress = 0.289622
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0.5)
