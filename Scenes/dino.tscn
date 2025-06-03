@@ -215,7 +215,7 @@ script = ExtResource("1_wsw0l")
 sprite_frames = SubResource("SpriteFrames_beh2q")
 animation = &"Duck"
 autoplay = "Idle"
-frame_progress = 0.161727
+frame_progress = 0.189021
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 0.5)
