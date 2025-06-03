@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bts1dl0v0iwu0"]
+[gd_scene load_steps=7 format=3 uid="uid://bts1dl0v0iwu0"]
 
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_2nmm6"]
 [ext_resource type="PackedScene" uid="uid://6yoej77p67mp" path="res://Scenes/background.tscn" id="1_c7hgl"]
 [ext_resource type="PackedScene" uid="uid://c2lkwnwjstqmt" path="res://Scenes/ground.tscn" id="2_p76b2"]
 [ext_resource type="PackedScene" uid="uid://cghasq7llts8e" path="res://Scenes/dino.tscn" id="3_pgw87"]
 [ext_resource type="PackedScene" uid="uid://0v27ywc66stl" path="res://Scenes/hud.tscn" id="5_6mudf"]
+[ext_resource type="PackedScene" uid="uid://b65imjksuvv4d" path="res://Scenes/game_over.tscn" id="6_cnk28"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_2nmm6")
@@ -20,3 +21,6 @@ position = Vector2(72, 472)
 position = Vector2(576, 324)
 
 [node name="HUD" parent="." instance=ExtResource("5_6mudf")]
+
+[node name="GameOver" parent="." instance=ExtResource("6_cnk28")]
+process_mode = 2
